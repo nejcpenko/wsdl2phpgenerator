@@ -16,6 +16,10 @@ jobs:
     - php: 7.4
       env: PREFER_LOWEST="--prefer-lowest" SYMFONY_VERSION=^4.3
     - php: 7.4
+      env: PREFER_LOWEST="" SYMFONY_VERSION=^4.4
+    - php: 7.4
+      env: PREFER_LOWEST="--prefer-lowest" SYMFONY_VERSION=^4.4
+    - php: 7.4
       env: PREFER_LOWEST="" SYMFONY_VERSION=^5.0
     - php: 7.4
       env: PREFER_LOWEST="--prefer-lowest" SYMFONY_VERSION=^5.0
@@ -23,6 +27,8 @@ jobs:
 env:
   - PREFER_LOWEST="--prefer-lowest" SYMFONY_VERSION=^3.4
   - PREFER_LOWEST="" SYMFONY_VERSION=^3.4
+  - PREFER_LOWEST="--prefer-lowest" SYMFONY_VERSION=^4.3
+  - PREFER_LOWEST="" SYMFONY_VERSION=^4.3
   - PREFER_LOWEST="--prefer-lowest" SYMFONY_VERSION=^4.3
   - PREFER_LOWEST="" SYMFONY_VERSION=^4.3
   - PREFER_LOWEST="--prefer-lowest" SYMFONY_VERSION=^5.0
